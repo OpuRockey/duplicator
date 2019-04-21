@@ -383,7 +383,8 @@ jQuery(document).ready(function ($)
 	Duplicator.Pack.DupArchiveMaxRetries = 10;
 	Duplicator.Pack.DupArchiveRetryDelayInMs = 8000;
 	Duplicator.Pack.DupArchiveStartTime = new Date().getTime();
-	Duplicator.Pack.StatusFrequency = 8000;
+	// Old status frequency is 8000, PB have cut down because In Lite 0 to direct 100 appers to user
+	Duplicator.Pack.StatusFrequency = 4000;
 
 	/*	----------------------------------------
 	 *	METHOD: Performs Ajax post to create a new package
