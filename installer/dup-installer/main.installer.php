@@ -90,7 +90,13 @@ try {
                 );
                 echo SnapLibUtil::wp_json_encode($resp);
             } else {
-                require_once($GLOBALS['DUPX_INIT'].'/lib/dup_archive/daws/daws.php');
+                try {
+                    require_once($GLOBALS['DUPX_INIT'].'/lib/dup_archive/daws/daws.php');
+                } catch (Exception $e) {
+                    echo 'Exception Message: ' .$e->getMessage();;
+                } catch (Error $e) {
+                    echo 'Error Message: ' .$e->getMessage();;
+                }
             }
             die();
         } else {
