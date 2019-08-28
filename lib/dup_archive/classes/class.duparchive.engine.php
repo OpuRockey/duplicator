@@ -7,6 +7,7 @@ defined('ABSPATH') || defined('DUPXABSPATH') || exit;
  */
 require_once(dirname(__FILE__) . '/class.duparchive.constants.php');
 
+require_once(dirname(__FILE__) . '/class.duparchive.processing.failure.php');
 require_once(DupArchiveConstants::$LibRoot . '/snaplib/class.snaplib.u.io.php');
 require_once(DupArchiveConstants::$LibRoot . '/snaplib/class.snaplib.u.stream.php');
 
@@ -17,7 +18,6 @@ require_once(dirname(__FILE__) . '/states/class.duparchive.state.simpleexpand.ph
 require_once(dirname(__FILE__) . '/states/class.duparchive.state.expand.php');
 require_once(dirname(__FILE__) . '/processors/class.duparchive.processor.file.php');
 require_once(dirname(__FILE__) . '/processors/class.duparchive.processor.directory.php');
-require_once(dirname(__FILE__) . '/class.duparchive.processing.failure.php');
 require_once(dirname(__FILE__) . '/util/class.duparchive.util.php');
 require_once(dirname(__FILE__) . '/util/class.duparchive.util.scan.php');
 
